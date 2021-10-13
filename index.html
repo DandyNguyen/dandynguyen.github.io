@@ -1,0 +1,114 @@
+﻿<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>TRỌNG NGUYỄN</title>
+
+
+
+      <link href="CSS/trangchinh.css" rel="stylesheet" />
+      <link href="CSS/forminfo.css" rel="stylesheet" />
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+  
+
+      <script>
+        $(document).ready(function () {
+
+            var counters = $(".count");
+            var countersQuantity = counters.length;
+            var counter = [];
+
+            for (i = 0; i < countersQuantity; i++) {
+                counter[i] = parseInt(counters[i].innerHTML);
+            }
+
+            var count = function (start, value, id) {
+                var localStart = start;
+                setInterval(function () {
+                    if (localStart < value) {
+                        localStart++;
+                        counters[id].innerHTML = localStart;
+                    }
+                }, 40);
+            }
+
+            for (j = 0; j < countersQuantity; j++) {
+                count(0, counter[j], j);
+            }
+        });
+      </script>
+
+
+
+      <link rel="icon" href="HinhPhu/logo.png" type="image/x-icon" />
+      <link rel="shortcut icon" href="HinhPhu/logo.png" type="image/x-icon" />
+  </head>
+  <body >
+  
+      <div class="header">
+          <div class="sides">
+              <a href="https://www.facebook.com/Thi%E1%BA%BFt-K%E1%BA%BF-Web-ST-111456693674897/?modal=admin_todo_tour" class="logo"><img src="HinhPhu/facebook.png" /></a>
+              <a href="/" class="logo"><img src="HinhPhu/twitter.png" /></a>
+              <a href="/" class="logo"><img src="HinhPhu/youtube.png" /></a>
+
+          </div>
+          <div class="sides"> <a href="#" class="menu"> </a></div>
+          <div class="info">
+
+              <div class="meta">
+                  <a href="/" class="author"></a><br>
+                  <h1>Xin chào, tôi là <b> Trọng</b></h1>
+                  <h2>Tôi là freelancer</h2>
+                  <h3>Tôi chuyên thiết kế Web theo yêu cầu.</h3>
+
+              </div>
+
+
+          </div>
+      </div>
+      <div id="Num">
+          <div class="row">
+              <ul class="flex-container">
+                  <li class="flex-item"><img src="HinhPhu/project.png" /><div class="count">20</div> Dự án </li>
+                  <li class="flex-item"><img src="HinhPhu/experience.png" /><div class="count">4</div> Kinh nghiệm </li>
+                  <li class="flex-item"><img src="HinhPhu/user.png" /> <div class="count">20</div> Người dùng tin tưởng  </li>
+
+              </ul>
+          </div>
+      </div>
+
+      <section class="content">
+          <div class="form">
+              <h2>Xin chào</h2>
+              <p>Tôi rất vui mừng khi được bạn xem trang web cá nhân này, tôi có 4 năm kinh nghiệm về thiết kế và xây dựng Web.</p>
+              <p>Tôi luôn cập nhật những tính năng mới để phù hợp với xu hướng hiện tại.</p>
+              <p>Tôi luôn muốn tạo ra sản phẩm chất lượng tốt và giá thành hợp lý cho khách hàng.</p>
+              <p>Bạn có thể trao đổi trực tiếp với tôi về dự án nhằm đưa ra hướng giải quyết tốt nhất cho bạn thông qua hộp thông tin bên dưới, messenger,...</p>
+
+              <ul id="Thongtin">
+                  <li>
+                      <span class="title">Tên:</span>
+                      <span class="value">Trọng</span>
+                  </li>
+                  <li>
+                      <span class="title">Quốc gia:</span>
+                      <span class="value">Việt Nam</span>
+                  </li>
+                  <li>
+                      <span class="title">Tuổi:</span>
+                      <span class="value">28</span>
+                  </li>
+                  <li>
+                      <span class="title">Số điện thoại:</span>
+                      <span class="value">+84 961 015 834</span>
+                  </li>
+              </ul>
+</div>
+</section>
+
+
+
+  </body>
+</html>
